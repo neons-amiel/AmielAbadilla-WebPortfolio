@@ -14,12 +14,12 @@ function Portfolio(){
     const projects = [
         {
             title: "Project Manager",
-            image: {uxdev},
+            image: uxdev,
             desc: "Led a core team of 36 officers across 7 departments to execute a 3-day Workshop-event",
         },
         {
             title: "Pogi",
-            image:  {uxdev},
+            image:  uxdev,
             desc: 'pogi sobra ni amiel yieee', 
         },
     ];
@@ -30,7 +30,7 @@ function Portfolio(){
         
     
         <div className='flex flex-col min-h-screen w-full bg-black font-montserrat text-white p-5 scroll-smooth z-50' id='home'  >
-            <div className='mx-auto px-2 md:px:-5 lg:px-10 max-w-6xl'>
+            <div className='mx-auto w-full px-10 lg:max-w-6xl'>
                 {/** ================= HEADER AREA ================= */}
 
                 <nav className='sticky top-0 left-0 w-full flex justify-center align-items-center p-5 '>
