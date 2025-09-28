@@ -2,12 +2,12 @@ import React from 'react';
 
 
 import amiel1 from '../assets/amielpfp1.jpg';
-import linkedin from '../assets/linkedin.jpg';
+import linkedin from '../assets/linkedin.png';
 import github from '../assets/github.png';
 import uxdev from '../assets/day2uxdev.jpg';
 
 import Project from '../components/projects.jsx';
-
+import BubbleText from '../components/bubbles.jsx';
 
 function Portfolio(){
 
@@ -23,6 +23,7 @@ function Portfolio(){
             desc: 'pogi sobra ni amiel yieee', 
         },
     ];
+
 
 
     return(
@@ -43,7 +44,7 @@ function Portfolio(){
 
                 {/** ================= HERO Section ================= */}
 
-                <div className='flex flex-col lg:flex-row md:flex-row justify-start lg:justify-center mt-5 gap-5 text-white mb-2 lg:mb-5 md:mb-2 border-2 border-teal-950 p-5 rounded-xl hover:shadow-[0_5px_10px_#00faf6] transition-shadow duration-350 ease-in' >
+                <div className='flex flex-col lg:flex-row md:flex-row justify-start lg:justify-center mt-5 lg:gap-10 gap-5 text-white mb-2 lg:mb-5 md:mb-2 border-2 border-teal-950 p-5 rounded-xl hover:shadow-[0_5px_10px_#00faf6] transition-shadow duration-350 ease-in' >
                     <div className='lg:flex-row sm:flex-col'>
                         <img src={amiel1} 
                         alt="Amiel Picture" 
@@ -51,11 +52,13 @@ function Portfolio(){
                     </div>
                     <div className='flex flex-col lg:justify-end justify-center lg:text-start lg:items-start text-center gap-2 lg:gap-3 '>
                         <h1 className='lg:text-8xl text-5xl'>Hi, </h1>
-                        <h1 className='lg:text-7xl text-5xl'>I'm Amiel Abadilla! </h1>
+                        <BubbleText />
+                        
+                        {/** <h1 className='lg:text-7xl text-5xl'>I'm Amiel Abadilla! </h1> */}
                         <h3 className='lg:text-3xl text-xl'>your IT Manager that can CODE</h3>
-                        <div className="flex flex-row justify-center  items-center lg:items-start text-center  gap-2 lg:gap-3">
-                            <a href=""> <img src={github} alt="" className='h-10 w-10' /> </a>
-                            <a href="https://linkedin.com/in/amiel-abadilla"> <img src={linkedin} alt="" className='h-10 w-10' /> </a>
+                        <div className="flex flex-row justify-center  items-center lg:items-start text-center  gap-2 lg:gap-3 bg-teal-500 rounded-md p-2">
+                            <a href=""> <img src={github} alt="" className='h-10 w-16 hover:transform-scale-x-1.1' /> </a>
+                            <a href="https://linkedin.com/in/amiel-abadilla"> <img src={linkedin} alt="" className='h-10 w-12' /> </a>
             
 
                         </div>
