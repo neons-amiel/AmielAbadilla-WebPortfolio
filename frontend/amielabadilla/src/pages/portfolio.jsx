@@ -3,7 +3,7 @@ import React from 'react';
 
 import amiel1 from '../assets/amielpfp1.jpg';
 import linkedin from '../assets/linkedin.jpg';
-import github from '../assets/github.jpg';
+import github from '../assets/github.png';
 import uxdev from '../assets/day2uxdev.jpg';
 
 import Project from '../components/projects.jsx';
