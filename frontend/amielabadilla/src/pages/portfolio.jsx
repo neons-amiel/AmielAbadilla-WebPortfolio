@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+import amiel1 from '../assets/amielpfp1.jpg'
 import Project from '/src/components/projects.jsx';
 
 
@@ -39,7 +41,7 @@ function Portfolio(){
 
                 <div className='flex flex-col lg:flex-row md:flex-row justify-start lg:justify-center mt-5 gap-5 text-white mb-2 lg:mb-5 md:mb-2 border-2 border-teal-950 p-5 rounded-xl hover:shadow-[0_5px_10px_#00faf6] transition-shadow duration-350 ease-in' >
                     <div className='lg:flex-row sm:flex-col'>
-                        <img src="src/assets/amielpfp1.jpg" 
+                        <img src={amiel1} 
                         alt="Amiel Picture" 
                         className='lg:w-auto lg:h-96 sm:h-72 sm:w-64 md:w-52 md:h-56 flex justify-end rounded-4xl shadow-lg' />
                     </div>
