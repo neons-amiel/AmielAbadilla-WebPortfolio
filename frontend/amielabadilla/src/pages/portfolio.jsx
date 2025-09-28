@@ -55,7 +55,7 @@ function Portfolio(){
                         <h3 className='lg:text-3xl text-xl'>your IT Manager that can CODE</h3>
                         <div className="flex flex-row justify-center  items-center lg:items-start text-center  gap-2 lg:gap-3">
                             <a href=""> <img src={github} alt="" className='h-10 w-10' /> </a>
-                            <a href="https://linkedin.com/in/amiel-abadilla"> <img src={github} alt="" className='h-10 w-10' /> </a>
+                            <a href="https://linkedin.com/in/amiel-abadilla"> <img src={linkedin} alt="" className='h-10 w-10' /> </a>
             
 
                         </div>
@@ -107,7 +107,7 @@ function Portfolio(){
                 {/** ================= About Me Section ================= */}
 
                 <div>
-                    <h1>What do I do?</h1>
+                    
                 </div>
 
 
