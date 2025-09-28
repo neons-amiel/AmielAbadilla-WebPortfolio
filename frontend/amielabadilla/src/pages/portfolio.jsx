@@ -46,7 +46,7 @@ function Portfolio(){
 
                 {/** ================= HERO Section ================= */}
 
-                <div className='flex flex-col lg:flex-row md:flex-row justify-start lg:justify-center mt-5 lg:gap-10 gap-5 text-white mb-2 lg:mb-5 md:mb-2 border-2 border-teal-950 p-5 rounded-xl hover:shadow-[0_5px_10px_#00faf6] transition-shadow duration-350 ease-in' >
+                <div className='flex flex-col lg:flex-row md:flex-row justify-start lg:justify-center mt-5 lg:gap-10 gap-5 text-white mb-2 lg:mb-5 md:mb-2 border-2 border-teal-950 p-5 rounded-xl hover:shadow-[0_5px_10px_#00faf6] transition-shadow duration-350 ease-in backdrop-blur-sm' >
                     <div className='lg:flex-row sm:flex-col'>
                         <img src={amiel1} 
                         alt="Amiel Picture" 
@@ -72,7 +72,7 @@ function Portfolio(){
 
                 {/** ================= ShortAbout Section ================= */}
 
-                <div className='flex flex-col lg:flex-col  lg:items-center items-start justify-start mb-25 lg:mt-10 mt-15 border-2 border-teal-950 p-5 rounded-xl hover:shadow-[0_5px_15px_#00faf6] transition-shadow duration-350 ease-in '>
+                <div className='flex flex-col lg:flex-col  lg:items-center items-start justify-start mb-25 lg:mt-10 mt-15 border-2 border-teal-950 p-5 rounded-xl hover:shadow-[0_5px_15px_#00faf6] transition-shadow duration-350 ease-in  backdrop-blur-sm'>
                     <div className='lg:gap-3 gap-0'>
                         <div className='flex lg:flex-row flex-col lg:gap-3 gap-0'>
                             <h1 className='text-teal-300 text-3xl lg:text-4xl lg:mb-3 mb-0 '>Bridging Business and IT with</h1>
