@@ -51,7 +51,7 @@ function Portfolio(){
                         className='lg:w-auto lg:h-96 sm:h-72 sm:w-64 md:w-52 md:h-56 flex justify-end rounded-4xl shadow-lg' />
                     </div>
                     <div className='flex flex-col lg:justify-end justify-center lg:text-start lg:items-start text-center gap-2 lg:gap-3 '>
-                        <h1 className='lg:text-8xl text-5xl'>Hi, </h1>
+                        <h1 className='lg:text-8xl text-5xl'>Hi,</h1>
                         <BubbleText />
                         
                         {/** <h1 className='lg:text-7xl text-5xl'>I'm Amiel Abadilla! </h1> */}
