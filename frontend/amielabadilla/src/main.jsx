@@ -7,6 +7,7 @@ import Portfolio from './pages/portfolio.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    
     <Portfolio />
   </StrictMode>,
 )

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Project from '/src/components/projects.jsx';
 
 
@@ -23,60 +24,97 @@ function Portfolio(){
         
     
         <div className='flex flex-col min-h-screen w-full bg-black font-montserrat text-white p-5 scroll-smooth z-50' id='home'  >
-             {/** ================= HEADER AREA ================= */}
+            <div className='mx-auto px-2 md:px:-5 lg:px-10 max-w-6xl'>
+                {/** ================= HEADER AREA ================= */}
 
-            <nav className='sticky top-0 left-0 w-full flex justify-center align-items-center p-5 '>
-                <ul className='flex flex-row gap-5 bg-teal-700 pt-3 pb-3 pl-5 pr-5 rounded-md shadow-2xl text-white  '>
-                    <a href='#home' className='hover:text-teal-200 cursor-pointer'>Home</a>
-                    <a href='#projects' className='hover:text-teal-200 cursor-pointer'>Projects</a>
-                    <a href='#Blog' className='hover:text-teal-200 cursor-pointer'>Blog</a>
-                </ul>
-            </nav>
+                <nav className='sticky top-0 left-0 w-full flex justify-center align-items-center p-5 '>
+                    <ul className='flex flex-row gap-5 bg-teal-400 pt-3 pb-3 pl-5 pr-5 rounded-md shadow-2xl text-black   '>
+                        <a href='#home' className='hover:text-pink-700 cursor-pointer'>Home</a>
+                        <a href='#projects' className='hover:text-pink-700 cursor-pointer'>Projects</a>
+                        <a href='#Blog' className='hover:text-pink-700 cursor-pointer'>Blog</a>
+                    </ul>
+                </nav>
 
-             {/** ================= HERO Section ================= */}
+                {/** ================= HERO Section ================= */}
 
-            <div className='flex flex-col lg:flex-row md:flex-row justify-start lg:justify-center mt-20 px-10- gap-5 text-white mb-2 lg:mb-60 md:mb-2' >
-                <div className='lg:flex-row sm:flex-col'>
-                    <img src="src/assets/amielpfp1.jpg" 
-                    alt="Amiel Picture" 
-                    className='lg:w-auto lg:h-96 sm:h-72 sm:w-64 md:w-52 md:h-56 flex justify-end rounded-4xl shadow-lg' />
-                </div>
-                <div className='flex flex-col lg:justify-end justify-center lg:text-start lg:items-start text-center gap-2 lg:gap-3 '>
-                    <h1 className='lg:text-8xl text-5xl'>Hi, </h1>
-                    <h1 className='lg:text-7xl text-5xl'>I'm Amiel Abadilla! </h1>
-                    <h3 className='lg:text-3xl text-xl'>your IT Manager that can CODE</h3>
-                    <div className="flex flex-row justify-center lg:justify end items-center lg:items-start text-center mt-5 gap-2 lg:gap-3">
-                        <a href=""> <img src="src/assets/github.png" alt="" className='h-16 w-16' /> </a>
-                        <a href="https://linkedin.com/in/amiel-abadilla"> <img src="src/assets/linkedin.jpg" alt="" className='h-16 w-16' /> </a>
-        
-
+                <div className='flex flex-col lg:flex-row md:flex-row justify-start lg:justify-center mt-5 gap-5 text-white mb-2 lg:mb-5 md:mb-2 border-2 border-teal-950 p-5 rounded-xl hover:shadow-[0_5px_10px_#00faf6] transition-shadow duration-350 ease-in' >
+                    <div className='lg:flex-row sm:flex-col'>
+                        <img src="src/assets/amielpfp1.jpg" 
+                        alt="Amiel Picture" 
+                        className='lg:w-auto lg:h-96 sm:h-72 sm:w-64 md:w-52 md:h-56 flex justify-end rounded-4xl shadow-lg' />
                     </div>
+                    <div className='flex flex-col lg:justify-end justify-center lg:text-start lg:items-start text-center gap-2 lg:gap-3 '>
+                        <h1 className='lg:text-8xl text-5xl'>Hi, </h1>
+                        <h1 className='lg:text-7xl text-5xl'>I'm Amiel Abadilla! </h1>
+                        <h3 className='lg:text-3xl text-xl'>your IT Manager that can CODE</h3>
+                        <div className="flex flex-row justify-center  items-center lg:items-start text-center  gap-2 lg:gap-3">
+                            <a href=""> <img src="src/assets/github.png" alt="" className='h-10 w-10' /> </a>
+                            <a href="https://linkedin.com/in/amiel-abadilla"> <img src="src/assets/linkedin.jpg" alt="" className='h-10 w-10' /> </a>
+            
 
-                </div>
-                
-                
-            
-            </div>
-            
-            
-
-
-            {/** ================= PROJECTS Section ================= */}
-            
-            <div className='flex flex-col justify-center text-center lg:text-center px-4 sm:px-4 md:px-10 mt-50  ' id='projects'>
-                <h1 className='text-4xl lg:text-7xl '>Here are my highlights!</h1>
-                <div className='flex flex-col lg:flex-wrap justify-center items-center gap-10 mt-10'>
-                    {projects.map((project,index) => (
-                        <Project
-                        key={index}
-                        title={project.title}
-                        image={project.image}
-                        desc={project.desc}
-                        />
-                    ))}
+                        </div>
+                    
+                    </div>
                     
                 </div>
+
+
+                {/** ================= ShortAbout Section ================= */}
+
+                <div className='flex flex-col lg:flex-col  lg:items-center items-start justify-start mb-25 lg:mt-10 mt-15 border-2 border-teal-950 p-5 rounded-xl hover:shadow-[0_5px_15px_#00faf6] transition-shadow duration-350 ease-in '>
+                    <div className='lg:gap-3 gap-0'>
+                        <div className='flex lg:flex-row flex-col lg:gap-3 gap-0'>
+                            <h1 className='text-teal-300 text-3xl lg:text-4xl lg:mb-3 mb-0 '>Bridging Business and IT with</h1>
+                            <h2 className='text-pink-300 text-3xl lg:text-4xl mb-3' >competence</h2>
+
+                        </div>
+                        
+                        <p className='lg:text-1xl'> Perpetual Goal: Destroy the stereotype that managers do not know what they are talking about</p>
+                    </div>
+                    <div className='flex justify-center items-center p-3 border-2 rounded-md mt-5 cursor-pointer hover:bg-teal-300 hover:text-black hover:translate-x-3 transition-transform duration-400 '>
+                        <a href="#projects" className=''>More about me!</a>
+                    </div>
+                
+
+                </div>
+                
+                
+
+
+                {/** ================= PROJECTS Section ================= */}
+                
+                <div className='flex flex-col justify-center text-center lg:text-center  mt-50 items-center ' id='projects'>
+                    <h1 className='text-4xl lg:text-7xl '>Here are my highlights!</h1>
+                    <div className='flex flex-col lg:flex-wrap justify-center items-center gap-10 mt-10'>
+                        {projects.map((project,index) => (
+                            <Project
+                            key={index}
+                            title={project.title}
+                            image={project.image}
+                            desc={project.desc}
+                            />
+                        ))}
+                        
+                    </div>
+                </div>
+
+                {/** ================= FOOTER Section ================= */}
+
+                <footer className=' flex flex-col lg:flex-row justify-between items-center  mt-10 pl-5 pr-5 lg:pl-30 lg:pr-30 '>
+                    <div className='flex flex-col lg:flex-row gap-1 lg:gap-3 text-center'>
+                        <h1>© Robert Amiel Abadilla.</h1>
+                        <h1>All Rights Reserved</h1>
+                    </div>
+
+                    <div className="flex flex-row gap-3 items-center justify-center">
+                        <a href=""> <img src="src/assets/github.png" alt="" className='h-8 w-8' /> </a>
+                        <a href="https://linkedin.com/in/amiel-abadilla"> <img src="src/assets/linkedin.jpg" alt="" className='h-8 w-8' /> </a>        
+                    </div>
+                        
+                </footer>
+
             </div>
+             
             
 
         </div>
