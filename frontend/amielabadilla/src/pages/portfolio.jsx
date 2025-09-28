@@ -98,6 +98,14 @@ function Portfolio(){
                     </div>
                 </div>
 
+                {/** ================= About Me Section ================= */}
+
+                <div>
+
+                </div>
+
+
+
                 {/** ================= FOOTER Section ================= */}
 
                 <footer className=' flex flex-col lg:flex-row justify-between items-center  mt-10 pl-5 pr-5 lg:pl-30 lg:pr-30 '>
