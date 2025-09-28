@@ -8,6 +8,7 @@ import uxdev from '../assets/day2uxdev.jpg';
 
 import Project from '../components/projects.jsx';
 import BubbleText from '../components/bubbles.jsx';
+import ParticleBackground from "../components/particles.jsx";
 
 function Portfolio(){
 
@@ -18,7 +19,7 @@ function Portfolio(){
             desc: "Led a core team of 36 officers across 7 departments to execute a 3-day Workshop-event",
         },
         {
-            title: "Pogi",
+            title: "Vice President",
             image:  uxdev,
             desc: 'pogi sobra ni amiel yieee', 
         },
@@ -30,7 +31,8 @@ function Portfolio(){
         
         
     
-        <div className='flex flex-col min-h-screen w-full bg-black font-montserrat text-white p-5 scroll-smooth z-50' id='home'  >
+        <div className='relative flex flex-col min-h-screen w-full font-montserrat text-white p-5 scroll-smooth ' id='home'  >
+            <ParticleBackground />
             <div className='mx-auto w-full px-10 lg:max-w-6xl'>
                 {/** ================= HEADER AREA ================= */}
 
