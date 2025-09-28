@@ -1,7 +1,11 @@
 import React from 'react';
 
 
-import amiel1 from '../assets/amielpfp1.jpg'
+import amiel1 from '../assets/amielpfp1.jpg';
+import linkedin from '../assets/linkedin.jpg';
+import github from '../assets/github.jpg';
+import uxdev from '../assets/day2uxdev.jpg';
+
 import Project from '/src/components/projects.jsx';
 
 
@@ -10,12 +14,12 @@ function Portfolio(){
     const projects = [
         {
             title: "Project Manager",
-            image: "src/assets/day2uxdev.jpg",
+            image: {uxdev},
             desc: "Led a core team of 36 officers across 7 departments to execute a 3-day Workshop-event",
         },
         {
             title: "Pogi",
-            image: 'src/assets/day2uxdev.jpg',
+            image:  {uxdev},
             desc: 'pogi sobra ni amiel yieee', 
         },
     ];
@@ -50,8 +54,8 @@ function Portfolio(){
                         <h1 className='lg:text-7xl text-5xl'>I'm Amiel Abadilla! </h1>
                         <h3 className='lg:text-3xl text-xl'>your IT Manager that can CODE</h3>
                         <div className="flex flex-row justify-center  items-center lg:items-start text-center  gap-2 lg:gap-3">
-                            <a href=""> <img src="src/assets/github.png" alt="" className='h-10 w-10' /> </a>
-                            <a href="https://linkedin.com/in/amiel-abadilla"> <img src="src/assets/linkedin.jpg" alt="" className='h-10 w-10' /> </a>
+                            <a href=""> <img src={github} alt="" className='h-10 w-10' /> </a>
+                            <a href="https://linkedin.com/in/amiel-abadilla"> <img src={github} alt="" className='h-10 w-10' /> </a>
             
 
                         </div>
@@ -117,8 +121,8 @@ function Portfolio(){
                     </div>
 
                     <div className="flex flex-row gap-3 items-center justify-center">
-                        <a href=""> <img src="src/assets/github.png" alt="" className='h-8 w-8' /> </a>
-                        <a href="https://linkedin.com/in/amiel-abadilla"> <img src="src/assets/linkedin.jpg" alt="" className='h-8 w-8' /> </a>        
+                        <a href=""> <img src={github} alt="" className='h-8 w-8' /> </a>
+                        <a href="https://linkedin.com/in/amiel-abadilla"> <img src={linkedin} alt="" className='h-8 w-8' /> </a>        
                     </div>
                         
                 </footer>
