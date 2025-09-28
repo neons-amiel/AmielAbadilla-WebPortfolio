@@ -11,4 +11,5 @@ BACKEND setup (Thius sets up the APIs and Models made in Django) !
 
 FRONTEND setup
 1. cd frontend
-2. npm run dev
+2. cd amielabadilla
+3. npm run dev (for running locally)
