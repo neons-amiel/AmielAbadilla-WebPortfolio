@@ -6,7 +6,7 @@ import linkedin from '../assets/linkedin.jpg';
 import github from '../assets/github.jpg';
 import uxdev from '../assets/day2uxdev.jpg';
 
-import Project from '/src/components/projects.jsx';
+import Project from '../components/projects.jsx';
 
 
 function Portfolio(){
