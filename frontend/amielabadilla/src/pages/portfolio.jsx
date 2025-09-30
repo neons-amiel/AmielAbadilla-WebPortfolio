@@ -1,14 +1,26 @@
 import React from 'react';
 
 
+{/** Hero and Link Logos */}
 import amiel1 from '../assets/amielpfp1.jpg';
 import linkedin from '../assets/linkedin.png';
 import github from '../assets/github.png';
 import uxdev from '../assets/day2uxdev.jpg';
 
+{/** TechStack Logos */}
+import python from '../assets/python.png';
+import html from '../assets/html.png';
+import css from '../assets/css.png'
+
+
+
+{/** Components */}
 import Project from '../components/projects.jsx';
 import BubbleText from '../components/bubbles.jsx';
 import ParticleBackground from "../components/particles.jsx";
+import TechStack from '../components/techstack.jsx';
+
+
 
 function Portfolio(){
 
@@ -25,6 +37,13 @@ function Portfolio(){
         },
     ];
 
+    const techs = [
+        {name: "Python", logo: python},
+        {name: "HTML", logo: html},
+        {name: "CSS", logo: css}
+    ];
+    
+
 
 
     return(
@@ -36,7 +55,7 @@ function Portfolio(){
             <div className='mx-auto w-full px-10 lg:max-w-6xl'>
                 {/** ================= HEADER AREA ================= */}
 
-                <nav className='sticky top-0 left-0 w-full flex justify-center align-items-center p-5 '>
+                <nav className='sticky top-0 left-0 w-full flex justify-center align-items-center p-5 z-50'>
                     <ul className='flex flex-row gap-5 bg-teal-400 pt-3 pb-3 pl-5 pr-5 rounded-md shadow-2xl text-black   '>
                         <a href='#home' className='hover:text-pink-700 cursor-pointer'>Home</a>
                         <a href='#projects' className='hover:text-pink-700 cursor-pointer'>Projects</a>
@@ -53,7 +72,7 @@ function Portfolio(){
                         className='lg:w-auto lg:h-96 sm:h-72 sm:w-64 md:w-52 md:h-56 flex justify-end rounded-4xl shadow-lg' />
                     </div>
                     <div className='flex flex-col lg:justify-end justify-center lg:text-start lg:items-start text-center gap-2 lg:gap-3 '>
-                        <h1 className='lg:text-8xl text-5xl'>Hi,</h1>
+                        <h1 className='lg:text-6xl text-5xl'>Hi,</h1>
                         <BubbleText />
                         
                         {/** <h1 className='lg:text-7xl text-5xl'>I'm Amiel Abadilla! </h1> */}
@@ -72,17 +91,17 @@ function Portfolio(){
 
                 {/** ================= ShortAbout Section ================= */}
 
-                <div className='flex flex-col lg:flex-col  lg:items-center items-start justify-start mb-25 lg:mt-10 mt-15 border-2 border-teal-950 p-5 rounded-xl hover:shadow-[0_5px_15px_#00faf6] transition-shadow duration-350 ease-in  backdrop-blur-sm'>
+                <div className='flex flex-col lg:flex-col  lg:items-center items-start justify-start mb-25 lg:mt-10 mt-15 border-2 border-teal-950 p-5 rounded-xl hover:shadow-[0_5px_15px_#00faf6] transition-shadow duration-200 ease-in  backdrop-blur-sm'>
                     <div className='lg:gap-3 gap-0'>
                         <div className='flex lg:flex-row flex-col lg:gap-3 gap-0'>
                             <h1 className='text-teal-300 text-3xl lg:text-4xl lg:mb-3 mb-0 '>Bridging Business and IT with</h1>
-                            <h2 className='text-pink-300 text-3xl lg:text-4xl mb-3' >competence</h2>
+                            <h2 className='text-pink-300 text-3xl lg:text-4xl mb-3' >strategic acumen</h2>
 
                         </div>
                         
-                        <p className='lg:text-1xl'> Perpetual Goal: Destroy the stereotype that managers do not know what they are talking about</p>
+                        <p className='lg:text-1xl'> Perpetual Goal: To erase friction between Business Requirements and IT Initiatives</p>
                     </div>
-                    <div className='flex justify-center items-center p-3 border-2 rounded-md mt-5 cursor-pointer hover:bg-teal-300 hover:text-black hover:translate-x-3 transition-transform duration-400 '>
+                    <div className='flex justify-center items-center p-3 border-2 rounded-md mt-5 cursor-pointer hover:bg-teal-300 hover:text-black hover:translate-x-3 transition-transform duration-200 '>
                         <a href="#projects" className=''>More about me!</a>
                     </div>
                 
@@ -92,11 +111,11 @@ function Portfolio(){
                 
 
 
-                {/** ================= PROJECTS Section ================= */}
+                {/** ================= Leadership Section ================= */}
                 
                 <div className='flex flex-col justify-center text-center lg:text-center  mt-50 items-center ' id='projects'>
-                    <h1 className='text-4xl lg:text-7xl '>Here are my highlights!</h1>
-                    <div className='flex flex-col lg:flex-wrap justify-center items-center gap-10 mt-10'>
+                    <h1 className='text-4xl lg:text-6xl '>Here are my highlights!</h1>
+                    <div className='flex flex-col lg:flex-wrap justify-center items-center lg:gap-10 gap-15 mt-10'>
                         {projects.map((project,index) => (
                             <Project
                             key={index}
@@ -109,9 +128,19 @@ function Portfolio(){
                     </div>
                 </div>
 
-                {/** ================= About Me Section ================= */}
+                {/** ================= Tech Stack Section ================= */}
 
-                <div>
+                <div className='flex flex-col items-center text-center justify-center mt-20 '>
+                    <h1 className='text-5xl'> The Technologies that I work with</h1>
+                    <div className='flex flex-wrap lg:gap-6 gap-3 lg:w-3/4 items-center justify-center mt-10  '>
+                        {techs.map((tech,index) => (
+                            <TechStack
+                            key={index}
+                            name={tech.name}
+                            logo={tech.logo}
+                            />
+                        ))}
+                    </div>
                     
                 </div>
 

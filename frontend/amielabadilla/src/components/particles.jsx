@@ -21,7 +21,7 @@ export default function ParticleBackground() {
     () => ({
       background: {
         color: {
-          value: "#000000", // black background
+          value: "#101010", // black background
         },
       },
       fpsLimit: 60,
@@ -37,16 +37,16 @@ export default function ParticleBackground() {
           },
         },
         modes: {
-          push: { quantity: 4 },
-          grab: { distance: 120, links: { opacity: 0.8 } },
+          push: { quantity: 1 },
+          grab: { distance: 200, links: { opacity: 0.8  } },
         },
       },
       particles: {
         number: {
-          value: 280,
+          value: 200,
           density: { enable: true, area: 800 },
         },
-        color: { value: ["#ffffff", "#83D7E1","#F390B1"] }, // snow is white
+        color: { value: [ "#83D7E1","#F390B1",] }, // snow is white
         shape: { type: "circle" },   // round snowflakes
         opacity: {
           value: 0.8,
@@ -58,7 +58,7 @@ export default function ParticleBackground() {
         move: {
           enable: true,
           direction: "bottom", // snow falls down
-          speed: 2,            // slow like snow
+          speed: 0.5,            // slow like snow
           straight: false,
           outModes: { default: "out" }, // respawn when leaving screen
         },
