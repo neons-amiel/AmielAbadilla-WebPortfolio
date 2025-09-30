@@ -4,8 +4,8 @@ import React from 'react';
 function TechStack({name, logo,}) {
 
     return (
-        <div className='flex flex-col justify-center items-center w-40 border-2 rounded-3xl backdrop-blur-sm gap-3 h-40'>
-            <img src={logo} alt={name} className=' max-h-25' />
+        <div className='flex flex-col justify-center items-center w-35  h-35 border-2 rounded-3xl gap-3 border-teal-300 bg-teal-950 hover:shadow-[0_5px_10px_#00faf6] hover:scale-105 transition-shadow-transform duration-180 ease-in backdrop-blur-sm'>
+            <img src={logo} alt={name} className=' max-h-20' />
             <h1>
                 {name}
             </h1>

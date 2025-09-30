@@ -11,6 +11,16 @@ import uxdev from '../assets/day2uxdev.jpg';
 import python from '../assets/python.png';
 import html from '../assets/html.png';
 import css from '../assets/css.png'
+import django from '../assets/django.svg';
+import javascript from '../assets/javascript.png';
+import react from '../assets/react.png';
+import next from '../assets/next.svg';
+import tailwind from '../assets/tailwind.png';
+
+{/** Tools Logos */}
+import asana from '../assets/asana.png';
+import jira from '../assets/jira.png';
+
 
 
 
@@ -19,6 +29,7 @@ import Project from '../components/projects.jsx';
 import BubbleText from '../components/bubbles.jsx';
 import ParticleBackground from "../components/particles.jsx";
 import TechStack from '../components/techstack.jsx';
+import PMTools from '../components/tools.jsx';
 
 
 
@@ -40,8 +51,20 @@ function Portfolio(){
     const techs = [
         {name: "Python", logo: python},
         {name: "HTML", logo: html},
-        {name: "CSS", logo: css}
+        {name: "CSS", logo: css},
+        {name: "Javascript", logo: javascript},
+        {name: "TailwindCSS", logo: tailwind},
+        {name: "React", logo: react},
+        {name: "Next.js", logo: next},
+        {name: "Django", logo: django},
+
+
     ];
+
+    const tools = [
+        {name: "Asana", logo: asana},
+        {name: "Jira", logo: jira},
+    ]
     
 
 
@@ -59,6 +82,7 @@ function Portfolio(){
                     <ul className='flex flex-row gap-5 bg-teal-400 pt-3 pb-3 pl-5 pr-5 rounded-md shadow-2xl text-black   '>
                         <a href='#home' className='hover:text-pink-700 cursor-pointer'>Home</a>
                         <a href='#projects' className='hover:text-pink-700 cursor-pointer'>Projects</a>
+                        <a href='#techstack' className='hover:text-pink-700 cursor-pointer'>Tech Stack</a>
                         <a href='#Blog' className='hover:text-pink-700 cursor-pointer'>Blog</a>
                     </ul>
                 </nav>
@@ -113,9 +137,9 @@ function Portfolio(){
 
                 {/** ================= Leadership Section ================= */}
                 
-                <div className='flex flex-col justify-center text-center lg:text-center  mt-50 items-center ' id='projects'>
+                <div className='flex flex-col justify-center text-center lg:text-center  mt-50 items-center mb-30' id='projects'>
                     <h1 className='text-4xl lg:text-6xl '>Here are my highlights!</h1>
-                    <div className='flex flex-col lg:flex-wrap justify-center items-center lg:gap-10 gap-15 mt-10'>
+                    <div className='flex flex-col lg:flex-wrap justify-center items-center lg:gap-10 gap-15 mt-10'  >
                         {projects.map((project,index) => (
                             <Project
                             key={index}
@@ -130,14 +154,28 @@ function Portfolio(){
 
                 {/** ================= Tech Stack Section ================= */}
 
-                <div className='flex flex-col items-center text-center justify-center mt-20 '>
-                    <h1 className='text-5xl'> The Technologies that I work with</h1>
+                <div className='flex flex-col items-center text-center justify-center ' id='techstack'>
+                    <h1 className='text-4xl'> My Coding Techstack</h1>
                     <div className='flex flex-wrap lg:gap-6 gap-3 lg:w-3/4 items-center justify-center mt-10  '>
                         {techs.map((tech,index) => (
                             <TechStack
                             key={index}
                             name={tech.name}
                             logo={tech.logo}
+                            />
+                        ))}
+                    </div>
+                    
+                </div>
+
+                <div className='flex flex-col items-center text-center justify-center mt-20 '>
+                    <h1 className='text-4xl'> My Tools for Project Management</h1>
+                    <div className='flex flex-wrap lg:gap-6 gap-3 lg:w-3/4 items-center justify-center mt-10  '>
+                        {tools.map((tool,index) => (
+                            <PMTools
+                            key={index}
+                            name={tool.name}
+                            logo={tool.logo}
                             />
                         ))}
                     </div>

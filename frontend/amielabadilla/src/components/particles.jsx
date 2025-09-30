@@ -38,7 +38,7 @@ export default function ParticleBackground() {
         },
         modes: {
           push: { quantity: 1 },
-          grab: { distance: 200, links: { opacity: 0.8  } },
+          grab: { distance: 150, links: { opacity: 0.8  } },
         },
       },
       particles: {
