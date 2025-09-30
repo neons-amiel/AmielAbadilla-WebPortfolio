@@ -22,6 +22,8 @@ import java from '../assets/java.png';
 {/** Tools Logos */}
 import asana from '../assets/asana.png';
 import jira from '../assets/jira.png';
+import gitlab from '../assets/gitlab.png';
+import git from '../assets/git.png';
 
 
 
@@ -31,7 +33,6 @@ import Project from '../components/projects.jsx';
 import BubbleText from '../components/bubbles.jsx';
 import ParticleBackground from "../components/particles.jsx";
 import TechStack from '../components/techstack.jsx';
-import PMTools from '../components/tools.jsx';
 
 
 
@@ -39,27 +40,27 @@ function Portfolio(){
 
     const projects = [
         {
-            title: "Project Manager",
+            title: "Project Director",
             image: uxdev,
             desc: "Led a core team of 36 officers across 7 departments to execute a 3-day Workshop-event",
         },
         {
-            title: "Vice President",
+            title: "Vice President for eServices",
+            image:  uxdev,
+            desc: 'Led 6 AVPs and 40+ officers to create IT Products & Services', 
+        },
+        {
+            title: "AVP for IT Products & Services",
             image:  uxdev,
             desc: 'pogi sobra ni amiel yieee', 
         },
         {
-            title: "Vice President",
+            title: "Lead Developer",
             image:  uxdev,
             desc: 'pogi sobra ni amiel yieee', 
         },
         {
-            title: "Vice President",
-            image:  uxdev,
-            desc: 'pogi sobra ni amiel yieee', 
-        },
-        {
-            title: "Vice President",
+            title: "Project Manager",
             image:  uxdev,
             desc: 'pogi sobra ni amiel yieee', 
         },
@@ -75,6 +76,7 @@ function Portfolio(){
         {name: "Next.js", logo: next},
         {name: "Django", logo: django},
         {name: "Java", logo: java},
+        {name: "Git", logo: git},
 
 
     ];
@@ -82,6 +84,9 @@ function Portfolio(){
     const tools = [
         {name: "Asana", logo: asana},
         {name: "Jira", logo: jira},
+        {name: "Github", logo: github},
+        {name: "Gitlab", logo: gitlab},
+
     ]
     
 
@@ -190,7 +195,7 @@ function Portfolio(){
                     <h1 className='text-4xl'> My Tools for Project Management</h1>
                     <div className='flex flex-wrap lg:gap-6 gap-3 lg:w-3/4 w-full items-center justify-center mt-10  '>
                         {tools.map((tool,index) => (
-                            <PMTools
+                            <TechStack
                             key={index}
                             name={tool.name}
                             logo={tool.logo}
