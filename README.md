@@ -20,7 +20,8 @@ TO INSTALL LATEST VERSION OF TAILWIND:
 1. cd frontend (make sure you are in frontend)
 1. npm install tailwindcss @tailwindcss/vite
 
+TO RUN
   
-1. cd frontend
+1. cd frontend (make sure you are in frontend)
 2. cd amielabadilla
 3. npm run dev (for running locally)
