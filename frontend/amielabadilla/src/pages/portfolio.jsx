@@ -214,14 +214,17 @@ function Portfolio(){
                 </div>
 
                 {/** ================= Highlights Section ================= */}
-                <div className='flex flex-col  justify-center text-center lg:text-center mt-30 items-center mb-20 w-full'  id='projects'>
-                    <h1 className='text-4xl lg:text-6l mb-10'>Here are my Achievements!</h1>
+                <div className='flex flex-col justify-center text-center items-center mb-20 w-screen -mx-[calc((100vw-100%)/2)] px-5'  id='projects'>
+                    <h1 className='text-4xl lg:text-6l lg:mb-10'>Here are my Achievements!</h1>
                     <Marquee 
                         speed={70}
                         direction="left"
                         pauseOnClick={true}
                         pauseOnHover={false}     
-                        className=" h-fit py-4 flex items-center "
+                        gradient={true}
+                        gradientColor={[10, 10, 10]}
+                        gradientWidth={60}   
+                        className=" h-fit py-4 flex items-center mt-5 "
                         
                         >
                         {highlights.map((highlight, index) => (

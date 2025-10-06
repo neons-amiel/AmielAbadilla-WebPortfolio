@@ -58,7 +58,7 @@ export default function ParticleBackground() {
         move: {
           enable: true,
           direction: "bottom", // snow falls down
-          speed: 0.5,            // slow like snow
+          speed: 0.2,            // slow like snow
           straight: false,
           outModes: { default: "out" }, // respawn when leaving screen
         },
