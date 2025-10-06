@@ -130,8 +130,8 @@ function Portfolio(){
                 <nav className='sticky top-0 left-0 w-full flex justify-center items-center p-3 z-50'>
                     <ul className='flex flex-row gap-5 justify-center items-center bg-teal-400 pt-3 pb-3 pl-5 pr-5 rounded-md shadow-2xl text-black   '>
                         <a href='#home' className='hover:text-pink-700 cursor-pointer'>Home</a>
-                        <a href='#projects' className='hover:text-pink-700 cursor-pointer'>About</a>
-                        <a href='#techstack' className='hover:text-pink-700 cursor-pointer'>Projects</a>
+                        <a href='#about' className='hover:text-pink-700 cursor-pointer'>About</a>
+                        <a href='#projects' className='hover:text-pink-700 cursor-pointer'>Projects</a>
                         <a href='#Blog' className='hover:text-pink-700 cursor-pointer'>Blog</a>
                     </ul>
                 </nav>
@@ -209,6 +209,9 @@ function Portfolio(){
                 </div>
 
                 {/** ================= Coding Projects Section ================= */}
+                <div id='Projects'>
+
+                </div>
 
                 {/** ================= Highlights Section ================= */}
                 <div className='flex flex-col  justify-center text-center lg:text-center mt-30 items-center mb-20 w-full'  id='projects'>
@@ -277,7 +280,7 @@ function Portfolio(){
 
                 <footer className=' flex flex-col lg:flex-row justify-between items-center gap-3 lg:gap-1  mt-10 pl-5 pr-5 lg:pl-30 lg:pr-30 '>
                     <div className='flex flex-col lg:flex-row gap-1 lg:gap-1 text-center'>
-                        <h1>© Robert Amiel Abadilla.</h1>
+                        <h1>© 2025 Robert Amiel Abadilla.</h1>
                         <h1>All Rights Reserved</h1>
                     </div>
 
