@@ -1,4 +1,5 @@
 import React from 'react';
+import Marquee from "react-fast-marquee";
 
 
 {/** Hero and Link Logos */}
@@ -7,6 +8,7 @@ import linkedin from '../assets/linkedin.png';
 import github from '../assets/github.png';
 import gmail from '../assets/gmail.png';
 import uxdev from '../assets/day2uxdev.jpg';
+import resume from '../assets/resume.png';
 
 {/** TechStack Logos */}
 import python from '../assets/python.png';
@@ -25,6 +27,11 @@ import jira from '../assets/jira.png';
 import gitlab from '../assets/gitlab.png';
 import git from '../assets/git.png';
 
+{/** Highlights  */}
+import peakathonfinalist from '../assets/peakathonfinalist.jpg';
+import peakathon from '../assets/peakathon.jpg';
+import imsummit from '../assets/imsummitcool.jpg';
+
 
 
 
@@ -33,6 +40,7 @@ import Project from '../components/projects.jsx';
 import BubbleText from '../components/bubbles.jsx';
 import ParticleBackground from "../components/particles.jsx";
 import TechStack from '../components/techstack.jsx';
+import Highlights from '../components/highlights.jsx';
 
 
 
@@ -42,7 +50,7 @@ function Portfolio(){
         {
             title: "Project Director",
             image: uxdev,
-            desc: "Led a core team of 36 officers across 7 departments to execute a 3-day Workshop-event",
+            desc: "",
         },
         {
             title: "Vice President for eServices",
@@ -89,6 +97,24 @@ function Portfolio(){
 
     ]
     
+    const highlights = [
+        {title: "P&G Peakathon 2024 National Finalist",
+         desc: "Ranked Top 10 out of 200+ teams in the P&G Peakathon 2023 Hackathon",
+         image: peakathon,
+        },
+        {title: "IM Summit 2025 Finalist",
+         desc: "Ranked Top 5 out of 20 teams in the RCBC IM Summit 2025 Hackathon",
+         image: imsummit,
+        },
+        {title: "Project Director",
+         desc: "Led a core team of 36 officers across 7 departments to execute a 3-day Workshop-event",
+         image: uxdev,
+        },
+        {title: "Project Manager",
+         desc: "Led a team of 5 developers and 2 designers to deploy the IM Summit 2024 Website within 2 weeks",
+         image: uxdev,
+        },
+    ]
 
 
 
@@ -101,11 +127,11 @@ function Portfolio(){
             <div className='mx-auto w-full lg:px-10 lg:max-w-6xl px-5'>
                 {/** ================= HEADER AREA ================= */}
 
-                <nav className='sticky top-0 left-0 w-full flex justify-center align-items-center p-5 z-50'>
-                    <ul className='flex flex-row gap-5 bg-teal-400 pt-3 pb-3 pl-5 pr-5 rounded-md shadow-2xl text-black   '>
+                <nav className='sticky top-0 left-0 w-full flex justify-center items-center p-3 z-50'>
+                    <ul className='flex flex-row gap-5 justify-center items-center bg-teal-400 pt-3 pb-3 pl-5 pr-5 rounded-md shadow-2xl text-black   '>
                         <a href='#home' className='hover:text-pink-700 cursor-pointer'>Home</a>
-                        <a href='#projects' className='hover:text-pink-700 cursor-pointer'>Projects</a>
-                        <a href='#techstack' className='hover:text-pink-700 cursor-pointer'>Tech Stack</a>
+                        <a href='#projects' className='hover:text-pink-700 cursor-pointer'>About</a>
+                        <a href='#techstack' className='hover:text-pink-700 cursor-pointer'>Projects</a>
                         <a href='#Blog' className='hover:text-pink-700 cursor-pointer'>Blog</a>
                     </ul>
                 </nav>
@@ -124,11 +150,18 @@ function Portfolio(){
                         
                         {/** <h1 className='lg:text-7xl text-5xl'>I'm Amiel Abadilla! </h1> */}
                         <h3 className='lg:text-3xl text-2xl'>your IT Manager that can CODE</h3>
-                        <div className="flex flex-row justify-center items-center lg:items-start text-center  gap-2 lg:gap-3 bg-teal-400 backdrop-opacity-40 rounded-md p-2">
-                            <a href=""> <img src={github} alt="" className='h-10 w-16 hover:transform-scale-x-1.1' /> </a>
-                            <a href="https://linkedin.com/in/amiel-abadilla"> <img src={linkedin} alt="" className='h-10 w-12' /> </a>
-                            <a href="mailto:robertamiel.abadilla@gmail.com"> <img src={gmail} alt="" className='h-9 w-11' /> </a>
-
+                        <div className="flex lg:flex-row flex-col lg:justify-between justify-center items-center lg:items-end text-center  gap-4 lg:gap-3 w-full rounded-md p-2">
+                            <div className='flex flex-row gap-5 justify-center items-end'>
+                                <a href=""> <img src={github} alt="" className='' /> </a>
+                                <a href="https://linkedin.com/in/amiel-abadilla"> <img src={linkedin} alt="" className='' /> </a>
+                                <a href="mailto:robertamiel.abadilla@gmail.com"> <img src={gmail} alt="" className='' /> </a>
+                            </div>
+                            
+                            <div className='flex flex-row justify-center items-center gap-1 mb-1'>
+                                <a href={resume} download><img src={resume} alt="My Resume" className='h-6 w-6' /></a>
+                                <a href={resume} download className='text-xs font-lexend mt-1'>Download my resume</a>
+                                
+                            </div>
                         </div>
                     
                     </div>
@@ -160,8 +193,8 @@ function Portfolio(){
 
                 {/** ================= Leadership Section ================= */}
                 
-                <div className='flex flex-col  justify-center text-center lg:text-center mt-50 items-center mb-30 w-full'  id='projects'>
-                    <h1 className='text-4xl lg:text-6xl '>Here are my highlights!</h1>
+                <div className='flex flex-col  justify-center text-center lg:text-center mt-30 items-center mb-20 w-full'  id='projects'>
+                    <h1 className='text-4xl lg:text-6xl '>Here are my Projects!</h1>
                     <div className='flex flex-col lg:flex-wrap lg:flex-row justify-center items-center lg:gap-5 gap-5 mt-10 w-full'  >
                         {projects.map((project,index) => (
                             <Project
@@ -175,9 +208,42 @@ function Portfolio(){
                     </div>
                 </div>
 
+                {/** ================= Coding Projects Section ================= */}
+
+                {/** ================= Highlights Section ================= */}
+                <div className='flex flex-col  justify-center text-center lg:text-center mt-30 items-center mb-20 w-full'  id='projects'>
+                    <h1 className='text-4xl lg:text-6l mb-10'>Here are my Achievements!</h1>
+                    <Marquee 
+                        speed={70}
+                        direction="left"
+                        pauseOnClick={true}
+                        pauseOnHover={false}     
+                        className=" h-fit py-4 flex items-center "
+                        
+                        >
+                        {highlights.map((highlight, index) => (
+                            <div 
+                            key={index} 
+                            className=""
+                            >
+                            <Highlights
+                                title={highlight.title}
+                                image={highlight.image}
+                                desc={highlight.desc}
+                            />
+                            </div>
+                        ))}
+                    </Marquee>
+
+                </div>
+                
+
+
+                 
+
                 {/** ================= Tech Stack Section ================= */}
 
-                <div className='flex flex-col items-center text-center justify-center w-full  ' id='techstack'>
+                <div className='flex flex-col items-center text-center justify-center w-full mt-10 ' id='techstack'>
                     <h1 className='text-4xl'> My Coding Techstack</h1>
                     <div className='flex flex-wrap lg:gap-6 gap-3 lg:w-3/4 w-full items-center justify-center mt-10  '>
                         {techs.map((tech,index) => (
@@ -191,7 +257,7 @@ function Portfolio(){
                     
                 </div>
 
-                <div className='flex flex-col items-center text-center justify-center mt-20 w-full '>
+                <div className='flex flex-col items-center text-center justify-center mt-20 w-full'>
                     <h1 className='text-4xl'> My Tools for Project Management</h1>
                     <div className='flex flex-wrap lg:gap-6 gap-3 lg:w-3/4 w-full items-center justify-center mt-10  '>
                         {tools.map((tool,index) => (
@@ -209,15 +275,16 @@ function Portfolio(){
 
                 {/** ================= FOOTER Section ================= */}
 
-                <footer className=' flex flex-col lg:flex-row justify-between items-center  mt-10 pl-5 pr-5 lg:pl-30 lg:pr-30 '>
-                    <div className='flex flex-col lg:flex-row gap-1 lg:gap-3 text-center'>
+                <footer className=' flex flex-col lg:flex-row justify-between items-center gap-3 lg:gap-1  mt-10 pl-5 pr-5 lg:pl-30 lg:pr-30 '>
+                    <div className='flex flex-col lg:flex-row gap-1 lg:gap-1 text-center'>
                         <h1>© Robert Amiel Abadilla.</h1>
                         <h1>All Rights Reserved</h1>
                     </div>
 
-                    <div className="flex flex-row gap-3 items-center justify-center">
+                    <div className="flex flex-row gap-4  items-center justify-center">
                         <a href=""> <img src={github} alt="" className='h-8 w-8' /> </a>
                         <a href="https://linkedin.com/in/amiel-abadilla"> <img src={linkedin} alt="" className='h-8 w-8' /> </a>        
+                        <a href="mailto:robertamiel.abadilla@gmail.com"> <img src={gmail} alt="" className='h-8 w-8' /> </a>
                     </div>
                         
                 </footer>

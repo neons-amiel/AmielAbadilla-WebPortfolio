@@ -16,4 +16,4 @@ function TechStack({name, logo,}) {
     
 }
 
-export default TechStack;
+export default TechStack;``
