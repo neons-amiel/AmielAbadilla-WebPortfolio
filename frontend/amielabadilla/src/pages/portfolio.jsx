@@ -27,10 +27,19 @@ import jira from '../assets/jira.png';
 import gitlab from '../assets/gitlab.png';
 import git from '../assets/git.png';
 
+{/** Coding Projects  */}
+import regsystem from '../assets/regsystem.png';
+import aisis from '../assets/aisis.png';
+import pos from '../assets/pos.png';
+import alo from '../assets/alo.png';
+import lazapee from '../assets/lazapee.png';
+import family from '../assets/family.png';
+
 {/** Highlights  */}
 import peakathonfinalist from '../assets/peakathonfinalist.jpg';
 import peakathon from '../assets/peakathon.jpg';
 import imsummit from '../assets/imsummitcool.jpg';
+
 
 
 
@@ -48,29 +57,34 @@ function Portfolio(){
 
     const projects = [
         {
-            title: "Project Director",
-            image: uxdev,
-            desc: "",
+            title: "Avenida Law Office Application System",
+            image: alo,
+            desc: "A Full-Stack Application Management System and Progress Tracker made with Django, React and TailwindCSS",
         },
         {
-            title: "Vice President for eServices",
-            image:  uxdev,
-            desc: 'Led 6 AVPs and 40+ officers to create IT Products & Services', 
+            title: "Ateneo AISIS Redesign",
+            image:  aisis,
+            desc: "A mockup of how I would redesign the UX of the Ateneo AISIS System using Figma",
         },
         {
-            title: "AVP for IT Products & Services",
-            image:  uxdev,
-            desc: 'pogi sobra ni amiel yieee', 
+            title: "Lazapee Payroll System",
+            image:  lazapee,
+            desc: "A web-based payroll system made with Django and Bootstrap that calculates employee salaries and generates periodic payslips",
         },
         {
-            title: "Lead Developer",
-            image:  uxdev,
-            desc: 'pogi sobra ni amiel yieee', 
+            title: "Point of Sales System",
+            image:  pos,
+            desc: "Developed an easily accessible POS system for any store using Python and Tkinter",
         },
         {
-            title: "Project Manager",
-            image:  uxdev,
-            desc: 'pogi sobra ni amiel yieee', 
+            title: "MISA Family Personality Quiz",
+            image:  family,
+            desc: "Managed and 3 Developers and 2 Designers to create a personality quiz website using PostGreSQL, HTML, CSS and Javascript",
+        },
+        {
+            title: "MISA Event Registration System",
+            image:  regsystem,
+            desc: "Data Architect and Project Manager of MISA's Member Involvement Tracker and Event Registration system",
         },
     ];
 
@@ -191,11 +205,11 @@ function Portfolio(){
                 
 
 
-                {/** ================= Leadership Section ================= */}
+                {/** ================= Coding Projects Section ================= */}
                 
                 <div className='flex flex-col  justify-center text-center lg:text-center mt-30 items-center mb-20 w-full'  id='projects'>
                     <h1 className='text-4xl lg:text-6xl '>Here are my Projects!</h1>
-                    <div className='flex flex-col lg:flex-wrap lg:flex-row justify-center items-center lg:gap-5 gap-5 mt-10 w-full'  >
+                    <div className='flex flex-col lg:flex-row md:flex-row md:flex-wrap  justify-center items-center lg:gap-5 gap-5 mt-10 w-full'  >
                         {projects.map((project,index) => (
                             <Project
                             key={index}
@@ -214,7 +228,7 @@ function Portfolio(){
                 </div>
 
                 {/** ================= Highlights Section ================= */}
-                <div className='flex flex-col justify-center text-center items-center mb-20 w-screen -mx-[calc((100vw-100%)/2)] px-5'  id='projects'>
+                <div className='flex flex-col justify-center text-center items-center mb-20 w-full -mx-[calc((100vw-100%)/2)] px-5'  id='projects'>
                     <h1 className='text-4xl lg:text-6l lg:mb-10'>Here are my Achievements!</h1>
                     <Marquee 
                         speed={70}
