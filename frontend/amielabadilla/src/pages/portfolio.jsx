@@ -26,6 +26,7 @@ import asana from '../assets/asana.png';
 import jira from '../assets/jira.png';
 import gitlab from '../assets/gitlab.png';
 import git from '../assets/git.png';
+import githubog from '../assets/githubog.png';
 
 {/** Coding Projects  */}
 import regsystem from '../assets/regsystem.png';
@@ -34,6 +35,7 @@ import pos from '../assets/pos.png';
 import alo from '../assets/alo.png';
 import lazapee from '../assets/lazapee.png';
 import family from '../assets/family.png';
+import imsummit2024 from '../assets/imsummit2024.png';
 
 {/** Highlights  */}
 import peakathonfinalist from '../assets/peakathonfinalist.jpg';
@@ -60,16 +62,18 @@ function Portfolio(){
             title: "Avenida Law Office Application System",
             image: alo,
             desc: "A Full-Stack Application Management System and Progress Tracker made with Django, React and TailwindCSS",
+            link: "https://www.figma.com/design/LVKWoE3mITrmcbh6b7NrBV/ALO-Application-Management-System?node-id=168-438&t=M3GHXae8edFhm4sG-1"
         },
         {
             title: "Ateneo AISIS Redesign",
             image:  aisis,
             desc: "A mockup of how I would redesign the UX of the Ateneo AISIS System using Figma",
+            link: "https://www.figma.com/design/UZleEne5kU6RXRb5XK9foW/Mobile-AISIS?node-id=0-1&t=M3GHXae8edFhm4sG-1"
         },
         {
             title: "Lazapee Payroll System",
             image:  lazapee,
-            desc: "A web-based payroll system made with Django and Bootstrap that calculates employee salaries and generates periodic payslips",
+            desc: "Lead Developer for a web-based payroll system made with Django and Bootstrap that calculates employee salaries and generates periodic payslips",
         },
         {
             title: "Point of Sales System",
@@ -79,13 +83,21 @@ function Portfolio(){
         {
             title: "MISA Family Personality Quiz",
             image:  family,
-            desc: "Managed and 3 Developers and 2 Designers to create a personality quiz website using PostGreSQL, HTML, CSS and Javascript",
+            desc: "Project Manager to 3 Developers and 2 Designers to create a personality quiz website using PostGreSQL, HTML, CSS and Javascript",
+            link: "https://family.misa.org.ph"
         },
         {
             title: "MISA Event Registration System",
             image:  regsystem,
             desc: "Data Architect and Project Manager of MISA's Member Involvement Tracker and Event Registration system",
         },
+        {
+            title: "Dream Calculator",
+            image:  regsystem,
+            desc: "A passion project involving a calculator that computes your salary after bills and calculates amount needed to reach your dreams",
+            link: "https://dreamcalculator.amielabadilla.com"
+        },
+        
     ];
 
     const techs = [
@@ -106,8 +118,8 @@ function Portfolio(){
     const tools = [
         {name: "Asana", logo: asana},
         {name: "Jira", logo: jira},
-        {name: "Github", logo: github},
         {name: "Gitlab", logo: gitlab},
+        {name: "Github", logo: githubog},
 
     ]
     
@@ -126,7 +138,7 @@ function Portfolio(){
         },
         {title: "Project Manager",
          desc: "Led a team of 5 developers and 2 designers to deploy the IM Summit 2024 Website within 2 weeks",
-         image: uxdev,
+         image: imsummit2024,
         },
     ]
 
@@ -216,6 +228,7 @@ function Portfolio(){
                             title={project.title}
                             image={project.image}
                             desc={project.desc}
+                            link={project.link}
                             />
                         ))}
                         
