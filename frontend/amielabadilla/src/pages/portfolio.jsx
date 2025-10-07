@@ -163,7 +163,7 @@ function Portfolio(){
                         <BubbleText />
                         
                         {/** <h1 className='lg:text-7xl text-5xl'>I'm Amiel Abadilla! </h1> */}
-                        <h3 className='lg:text-3xl text-2xl'>your IT Manager that can CODE</h3>
+                        <h3 className='lg:text-3xl text-2xl '>your IT Manager that can CODE</h3>
                         <div className="flex lg:flex-row flex-col lg:justify-between justify-center items-center lg:items-end text-center  gap-4 lg:gap-3 w-full rounded-md p-2">
                             <div className='flex flex-row gap-5 justify-center items-end'>
                                 <a href=""> <img src={github} alt="" className='' /> </a>
@@ -228,7 +228,7 @@ function Portfolio(){
                 </div>
 
                 {/** ================= Highlights Section ================= */}
-                <div className='flex flex-col justify-center text-center items-center mb-20 w-full -mx-[calc((100vw-100%)/2)] px-5'  id='projects'>
+                <div className='flex flex-col justify-center text-center items-center mb-20 w-full'  id='projects'>
                     <h1 className='text-4xl lg:text-6l lg:mb-10'>Here are my Achievements!</h1>
                     <Marquee 
                         speed={70}
