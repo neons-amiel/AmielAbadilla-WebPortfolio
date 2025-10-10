@@ -9,6 +9,7 @@ import github from '../assets/github.png';
 import gmail from '../assets/gmail.png';
 import uxdev from '../assets/day2uxdev.jpg';
 import resume from '../assets/resume.png';
+import resumePDF from '../assets/Resume_Abadilla.pdf';
 
 {/** TechStack Logos */}
 import python from '../assets/python.png';
@@ -74,6 +75,7 @@ function Portfolio(){
             title: "Lazapee Payroll System",
             image:  lazapee,
             desc: "Lead Developer for a web-based payroll system made with Django and Bootstrap that calculates employee salaries and generates periodic payslips",
+            link: "https://github.com/neons-amiel/Lazapee-Payroll-System.git"
         },
         {
             title: "Point of Sales System",
@@ -90,6 +92,7 @@ function Portfolio(){
             title: "MISA Event Registration System",
             image:  regsystem,
             desc: "Data Architect and Project Manager of MISA's Member Involvement Tracker and Event Registration system",
+            
         },
         {
             title: "Dream Calculator",
@@ -185,7 +188,7 @@ function Portfolio(){
                             
                             <div className='flex flex-row justify-center items-center gap-1 mb-1'>
                                 <a href={resume} download><img src={resume} alt="My Resume" className='h-6 w-6' /></a>
-                                <a href={resume} download className='text-xs font-lexend mt-1'>Download my resume</a>
+                                <a href={resumePDF} download className='text-xs font-lexend mt-1'>Download my resume</a>
                                 
                             </div>
                         </div>
