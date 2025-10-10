@@ -81,6 +81,7 @@ function Portfolio(){
             title: "Point of Sales System",
             image:  pos,
             desc: "Developed an easily accessible POS system for any store using Python and Tkinter",
+            link: "https://github.com/neons-amiel/Cute-POS-System.git"
         },
         {
             title: "MISA Family Personality Quiz",
