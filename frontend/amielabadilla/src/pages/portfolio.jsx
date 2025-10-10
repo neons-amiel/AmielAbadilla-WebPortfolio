@@ -182,7 +182,7 @@ function Portfolio(){
                         <h3 className='lg:text-3xl text-2xl '>your IT Manager that can CODE</h3>
                         <div className="flex lg:flex-row flex-col lg:justify-between justify-center items-center lg:items-end text-center  gap-4 lg:gap-3 w-full rounded-md p-2">
                             <div className='flex flex-row gap-5 justify-center items-end'>
-                                <a href=""> <img src={github} alt="" className='' /> </a>
+                                <a href="https://github.com/neons-amiel"> <img src={github} alt="" className='' /> </a>
                                 <a href="https://linkedin.com/in/amiel-abadilla"> <img src={linkedin} alt="" className='' /> </a>
                                 <a href="mailto:robertamiel.abadilla@gmail.com"> <img src={gmail} alt="" className='' /> </a>
                             </div>
@@ -319,7 +319,7 @@ function Portfolio(){
                     </div>
 
                     <div className="flex flex-row gap-4  items-center justify-center">
-                        <a href=""> <img src={github} alt="" className='h-8 w-8' /> </a>
+                        <a href="https://github.com/neons-amiel"> <img src={github} alt="" className='h-8 w-8' /> </a>
                         <a href="https://linkedin.com/in/amiel-abadilla"> <img src={linkedin} alt="" className='h-8 w-8' /> </a>        
                         <a href="mailto:robertamiel.abadilla@gmail.com"> <img src={gmail} alt="" className='h-8 w-8' /> </a>
                     </div>
