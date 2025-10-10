@@ -244,7 +244,7 @@ function Portfolio(){
 
                 </div>
 
-                {/** ================= Highlights Section ================= */}
+                {/** ================= Marquee Highlights Section ================= */}
                 <div className='flex flex-col justify-center text-center items-center mb-20 w-full'  id='projects'>
                     <h1 className='text-4xl lg:text-6l lg:mb-10'>Here are my Achievements!</h1>
                     <Marquee 
